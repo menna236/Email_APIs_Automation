@@ -5,7 +5,7 @@ framework uses Email Collection APIs from github.com/public-apis to test email v
 # Prerequisites
 Before running the project, ensure that you have the following installed:
 - IntelliJ IDEA
-- Java 21 or higher installed
+- Java 21 or higher
 - Maven (for dependency management and building the project)
 
 # Setup Instructions
@@ -21,4 +21,4 @@ Before running the project, ensure that you have the following installed:
 
 # Running the Tests
 1. Navigate to the src/test/java folder in the Project
-2. Right-click the EmailApiTests.java file (or any other test file) and select Run 'EmailApiTests' to execute the tests
+2. Right-click the EmailApiTests.java file and select Run 'EmailApiTests' to execute the tests
