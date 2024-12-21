@@ -5,12 +5,11 @@ import io.restassured.response.Response;
 
 public class EmailApiClient {
 
-
     public String isEmailDisposable(String email) {
 
         Response response = RestAssured.given()
                 .when()
-                .get(Config.userCheckVaseUrl +Config.DisposableEmailEndPoint + email)
+                .get(Config.userCheckBaseUrl +Config.DisposableEmailEndPoint + email)
                 .then()
                 .statusCode(200)
                 .log().all()
@@ -23,7 +22,7 @@ public class EmailApiClient {
         Response response = RestAssured.given()
                 .queryParam("token", token)
                 .when()
-                .get(Config.verifyRightBseUrl +Config.VerifyEmailEndPoint + email)
+                .get(Config.verifyRightBaseUrl +Config.VerifyEmailEndPoint + email)
                 .then()
                 .log().all()
                 .extract()

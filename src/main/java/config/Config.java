@@ -3,8 +3,8 @@ package config;
 public class Config {
 
     // Base URLs
-    public static final String userCheckVaseUrl = "https://api.usercheck.com";
-    public static final String verifyRightBseUrl = "https://verifyright.co";
+    public static final String userCheckBaseUrl = "https://api.usercheck.com";
+    public static final String verifyRightBaseUrl = "https://verifyright.co";
 
     // Endpoints
     public static final String DisposableEmailEndPoint = "/email/";
